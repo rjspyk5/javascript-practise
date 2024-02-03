@@ -49,18 +49,13 @@ const totalSalaryCompanyHaveTogive=(ar)=>{
 
 // Input:
 
-// let myObject = {
+let myObject = {
 
-// name: 'John Doe',
-// age: 25,
-// city: 'Example City',
-// isStudent: true
-// };
-
-// Output:
-
-
-// key: name | type:  string
-// key: age | type:  number
-// key: city | type:  string
-// key: isStudent | type:  boolean
+name: 'John Doe',
+age: 25,
+city: 'Example City',
+isStudent: true
+};
+for (const ke in myObject) {
+console.log(`${ke} :${myObject[ke]}  | type : ${typeof(myObject[ke])} `);
+}

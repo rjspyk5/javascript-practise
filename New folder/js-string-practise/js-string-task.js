@@ -1,14 +1,38 @@
 // Count how many times a string has the letter a
+const names="My name is Rakibul Islam"
+const nam=names.toLocaleLowerCase()
 
-// Task-2:
-// Count how many times a string has the letter a or A
-
+let aCount=0;
+for (const name of nam) {
+    if (name=="a") {
+        aCount++
+        
+    }
+    
+}
 // Task-3:
 // Check whether a string contains all the vowels a, e, i, o, u
+const statement="hello this is a xline which will be cheched that"
+const answer=statement.includes("i" && "a" && "e" && "o" && "u")
+
+
 
 // Task-4:
 // If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 
-// Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
+
+if (statement.includes(("x" || "X"))) {
+  const changed= statement.replace("x","Y")
+    
+}
 // Task-5:
 // Capitalize Every first Letter of each word in a String
+const splitedStatement=statement.split(" ")
+
+for (let index = 0; index < splitedStatement.length; index++) {
+splitedStatement[index].split("")
+    
+}
+console.log(splitedStatement);
+
+
