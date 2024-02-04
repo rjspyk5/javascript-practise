@@ -1,5 +1,7 @@
 // 1.JavaScripting program which will count how many is positive, how many negative ,how many are zero and sum up         numbers for the following array:
 //         var data = [4,4,-4,-1,0,-8,0,45,9,79];
+
+
 // 	2.JavaScript program to find largest number among three numbers.
 // 	3.JavaScript program to find smallest number,larger number & sum up array of numbers.
 // 	4.JavaScript program which takes a score and will print the grade as the following criteria:
@@ -23,9 +25,3 @@
 // 	****	  **	  *****     1234    4444
 // 	*****	  *	  *****	    12345   55555
 // 	12.JavaScript Program to Print the Fibonacci Sequence, 0-10.
-for (var i = 0; i < 5; i++) {
-    setTimeout(function () {
-    
-  }, 100);
-} 
-console.log(Math.pow(2, 3));
