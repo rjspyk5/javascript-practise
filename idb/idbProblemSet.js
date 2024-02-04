@@ -23,3 +23,9 @@
 // 	****	  **	  *****     1234    4444
 // 	*****	  *	  *****	    12345   55555
 // 	12.JavaScript Program to Print the Fibonacci Sequence, 0-10.
+for (var i = 0; i < 5; i++) {
+    setTimeout(function () {
+    
+  }, 100);
+} 
+console.log(Math.pow(2, 3));
