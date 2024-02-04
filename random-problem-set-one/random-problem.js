@@ -62,10 +62,41 @@ const longestWord=(given)=>{
 
         
     }
-    console.log(longestLenght);
+   ;
 }
 
 // Task-5:
 // Generate a random number between 10 to 20.
 const ra=Math.random()*20
 const random=Math.round(ra) <10? Math.round(ra)+10: Math.round(ra)
+
+// Leap Year
+const leapYear=(year)=>{
+if (year%4===0 && year%100!==0) {
+     
+    return true
+} 
+else if (year%100===0 && year%400===0) {
+    return true
+    
+} else {
+    return false
+}
+}
+
+// No duplicate
+const biriyaniKhors=["abul","babul","tutul","abul"]
+const uniqueArray=[]
+
+for (const biriyaniKhor of biriyaniKhors) {
+    if (!uniqueArray.includes(biriyaniKhor)) {
+        uniqueArray.push(biriyaniKhor)
+        
+    }   
+}
+// calculate the average of odd number
+// Swap with temp and with destrutring
+  
+
+
+
