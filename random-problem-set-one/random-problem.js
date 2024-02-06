@@ -36,61 +36,77 @@ const vowelChecker = (letterr) => {
 
 // // Task-4:
 // // Write a function to find the longest word in a given string.
+const largestWord=(sentences)=>{
+  let wordArray=sentences.split(",")
+  let higestWord=wordArray[0]
+  for (const word of wordArray) {
+    if (word.length>higestWord.length) {
+      higestWord=word
+      
+    }
 
-// const longestWord = (given) => {
-//   const splitedGivens = given.split(" ");
-//   let longestLenght = " ";
-//   for (const splitedGiven of splitedGivens) {
-//     if (splitedGiven.length > longestLenght.length) {
-//       longestLenght = splitedGiven;
-//     }
-//   }
-// };
+    
+  }
+  return higestWord
+}
+
 
 // // Task-5:
 // // Generate a random number between 10 to 20.
-// const ra = Math.random() * 20;
-// const random = Math.round(ra) < 10 ? Math.round(ra) + 10 : Math.round(ra);
+const randomTenToTwenty=()=>{
+const random= Math.round(Math.random()*20) 
+const tenToTwenty=random < 10? (random+10) : random;
+return randomTenToTwenty
+}
+
+
 
 // // Leap Year
-// const leapYear = (year) => {
-//   if (year % 4 === 0 && year % 100 !== 0) {
-//     return true;
-//   } else if (year % 100 === 0 && year % 400 === 0) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
+const leapYear = (year) => {
+  if (year % 4 === 0 && year % 100 !== 0) {
+    return true;
+  } else if (year % 100 === 0 && year % 400 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 // // No duplicate
-// const biriyaniKhors = ["abul", "babul", "tutul", "abul"];
-// const uniqueArray = [];
 
-// for (const biriyaniKhor of biriyaniKhors) {
-//   if (!uniqueArray.includes(biriyaniKhor)) {
-//     uniqueArray.push(biriyaniKhor);
-//   }
-// }
+const noDuplicate=(arr)=>{
+  let uniqueArray=[]
+  for (const el of arr) {
+  if (!uniqueArray.includes(el)) {
+    uniqueArray.push(el)    
+    }
+    return uniqueArray
+  }
+}
+
 // // calculate the average of odd number
-// const averageOfOddNumber = (numbers) => {
-//   const value = numbers.reduce((acc, value) => acc + value);
-//   const final = value / numbers.length;
-//   return final;
-// };
+const averageOfOdd=(arr)=>{
+  let sum=0;
+  for (const el of arr) {
+    if (el%2!==0) {
+      sum+=el
+      
+    }
+    
+  }
+  return sum/arr.length
+}
 
 // // Swap with temp and with destrutring
-// // using temp
-// let a = 100;
-// let b = 200;
-// let temp;
-// temp = a;
-// a = b;
-// b = temp;
+// Swap Using temp
+let a=10,b=500,temp=0;
+temp=a;
+a=b;
+b=temp;
+
 // // using destructing
-// let c = 10;
-// let d = 20;
-// [d, c] = [c, d];
+let c=50,d=600;
+[d,c]=[c,d]
 // // Fibonacchi
 // // Shopping cart products
 // const products=[
