@@ -1,45 +1,38 @@
 // // Task-1:
 // // Write a function to convert temperature from Celsius to Fahrenheit.
-// const givenTemperature = 20;
-// const cToF = (given) => {
-//   const value = (given * 9) / 5 + 32;
-// };
-// cToF(givenTemperature);
+
+const celToFa = (given) => {
+  return given * (9 / 5) + 32;
+};
 
 // // Task-2:
 // // You are given an array of numbers. Count how many times the a number is repeated in the array.
-
-// // sample-input: numbers = [5,6,11,12,98, 5]// find: 5
-// const numbers = [6, 11, 12, 98];
-// const find = (givenarray, searcingValue) => {
-//   let count = 0;
-//   for (const el of givenarray) {
-//     if (el == searcingValue) {
-//       count++;
-//     }
-//   }
-//   return count;
-// };
-
-// const finded = find(numbers, 5);
+const repeatedValue = (arr, find) => {
+  let count = 0;
+  for (let index = 0; index < arr.length; index++) {
+    if (arr[index] === find) {
+      count++;
+    }
+  }
+  return count;
+};
 
 // // Task-3:
 // // Write a function to count the number of vowels in a string.
-// const vowelCounter = (givenStrings) => {
-//   let count = 0;
-//   for (const givenString of givenStrings) {
-//     if (
-//       givenString == "a" ||
-//       givenString == "e" ||
-//       givenString == "i" ||
-//       givenString == "o" ||
-//       givenString == "u"
-//     ) {
-//       count++;
-//     }
-//   }
-// };
-// vowelCounter("hello this is rakibul");
+const vowelChecker = (letterr) => {
+  let count;
+  let letter = letterr.toLowerCase();
+  if (
+    letter === "a" ||
+    letter === "e" ||
+    letter === "i" ||
+    letter === "o" ||
+    letter === "u"
+  ) {
+    count++;
+  }
+  return count;
+};
 
 // // Task-4:
 // // Write a function to find the longest word in a given string.
@@ -122,56 +115,53 @@
 //         remaining=remaining-10;
 //         total=total+50
 //        return total+(remaining*2)
-        
+
 //       } else {
 //         return total+(remaining*5);
-        
+
 //       }
 
-      
 //     } else {
 //       return quantity*10
-      
+
 //     }
 //   }
-
-
 
 //   array-looping-tasks
 //   Task 1
 //   Write a JavaScript code to reverse the array colors without using the reverse method.
-  
+
 //   Input: const colors = ['red', 'blue', 'green', 'yellow', 'orange']
-  
+
 //   Output:
-  
+
 //   ['orange', 'yellow', 'green', 'blue', 'red']
-  
+
 //   Task 2
 //   Write a JavaScript code to get the even numbers from an array using any looping technique.
-  
+
 //   Input: const numbers = [12, 98, 5, 41, 23, 78, 46];
-  
+
 //   Output:
-  
+
 //   [12, 98, 76, 46]
-  
+
 //   Task 3
 //   Use a for...of loop to concatenate all the elements of an array into a single string.
-  
+
 //   Input: var numbers = ['Tom', 'Tim', 'Tin', 'Tik']
-  
+
 //   Output:
-  
+
 //   'TomTimTinTik'
-  
+
 //   Task 4 (Hard)
 //   Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
-  
+
 //   Input: const statement = 'I am a hard working person'
-  
+
 //   Output:
-  
+
 //   'person working hard a am I'
 
 //   Simple function Related Practice Tasks
@@ -202,7 +192,6 @@
 // find: 5
 
 // output: 2
-
 
 // sample-input:
 
@@ -246,7 +235,6 @@
 // You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
 
 // Input
-
 
 //     const phones = [
 //         { model: "PhoneA", brand: "Iphone", price: 95000 },
