@@ -1,3 +1,4 @@
+console.log("object");
 const firstName = document.getElementById("firstname");
 const lastName = document.getElementById("lastname");
 const password = document.getElementById("password");
