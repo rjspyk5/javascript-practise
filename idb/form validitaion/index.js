@@ -29,15 +29,10 @@ const newWindow = (arr) => {
 
 // Submit Handle
 const handleSubmit = () => {
-  if (firstName.value === "") {
-    return (firstName.style.border = "1px solid red");
-  }
-
   newWindow([
     ["Name", `${firstName.value} ${lastName.value}`],
     ["Email", email.value],
     ["Password", password.value],
   ]);
 };
-
 submit.addEventListener("click", () => handleSubmit());

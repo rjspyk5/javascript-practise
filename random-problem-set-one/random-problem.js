@@ -36,30 +36,24 @@ const vowelChecker = (letterr) => {
 
 // // Task-4:
 // // Write a function to find the longest word in a given string.
-const largestWord=(sentences)=>{
-  let wordArray=sentences.split(",")
-  let higestWord=wordArray[0]
+const largestWord = (sentences) => {
+  let wordArray = sentences.split(",");
+  let higestWord = wordArray[0];
   for (const word of wordArray) {
-    if (word.length>higestWord.length) {
-      higestWord=word
-      
+    if (word.length > higestWord.length) {
+      higestWord = word;
     }
-
-    
   }
-  return higestWord
-}
-
+  return higestWord;
+};
 
 // // Task-5:
 // // Generate a random number between 10 to 20.
-const randomTenToTwenty=()=>{
-const random= Math.round(Math.random()*20) 
-const tenToTwenty=random < 10? (random+10) : random;
-return randomTenToTwenty
-}
-
-
+const randomTenToTwenty = () => {
+  const random = Math.round(Math.random() * 20);
+  const tenToTwenty = random < 10 ? random + 10 : random;
+  return randomTenToTwenty;
+};
 
 // // Leap Year
 const leapYear = (year) => {
@@ -74,173 +68,155 @@ const leapYear = (year) => {
 
 // // No duplicate
 
-const noDuplicate=(arr)=>{
-  let uniqueArray=[]
+const noDuplicate = (arr) => {
+  let uniqueArray = [];
   for (const el of arr) {
-  if (!uniqueArray.includes(el)) {
-    uniqueArray.push(el)    
+    if (!uniqueArray.includes(el)) {
+      uniqueArray.push(el);
     }
-    return uniqueArray
+    return uniqueArray;
   }
-}
+};
 
 // // calculate the average of odd number
-const averageOfOdd=(arr)=>{
-  let sum=0;
+const averageOfOdd = (arr) => {
+  let sum = 0;
   for (const el of arr) {
-    if (el%2!==0) {
-      sum+=el
-      
+    if (el % 2 !== 0) {
+      sum += el;
     }
-    
   }
-  return sum/arr.length
-}
+  return sum / arr.length;
+};
 
 // // Swap with temp and with destrutring
 // Swap Using temp
-let a=10,b=500,temp=0;
-temp=a;
-a=b;
-b=temp;
+let a = 10,
+  b = 500,
+  temp = 0;
+temp = a;
+a = b;
+b = temp;
 
 // // using destructing
-let c=50,d=600;
-[d,c]=[c,d]
+let c = 50,
+  d = 600;
+[d, c] = [c, d];
 
 // // Fibonacchi
-const fibonacchi=(num)=>{
-  let first=0;
-  let second=1;
-  let sum=0;
+const fibonacchi = (num) => {
+  let first = 0;
+  let second = 1;
+  let sum = 0;
   for (let index = 0; index < num; index++) {
     console.log(first);
-    sum=first+second;
-    
-    first=second;
-    second=sum;
- 
-    
-  }
-}
+    sum = first + second;
 
+    first = second;
+    second = sum;
+  }
+};
 
 // // Shopping cart products
 
-const products=[
-  {name:"Chiruni",price:300,quantity:1},
-  {name:"Chirun",price:5600,quantity:2}
-]
-const total=products.reduce((acc,el)=>{
- return acc+(el.price*el.quantity);
-  },0)
+const products = [
+  { name: "Chiruni", price: 300, quantity: 1 },
+  { name: "Chirun", price: 5600, quantity: 2 },
+];
+const total = products.reduce((acc, el) => {
+  return acc + el.price * el.quantity;
+}, 0);
 
 //   // Discount Calculator
 //   // first 100=100;10-20=5;
-const discount=(quantity)=>{
-  if (quantity<=100) {
-    return quantity*100
-  } else if(quantity>100 && quantity<200){
-    let firstHundred=100*100;
-    let remaining=quantity-100;
-    return firstHundred+remaining*50
-    
+const discount = (quantity) => {
+  if (quantity <= 100) {
+    return quantity * 100;
+  } else if (quantity > 100 && quantity < 200) {
+    let firstHundred = 100 * 100;
+    let remaining = quantity - 100;
+    return firstHundred + remaining * 50;
+  } else {
+    let remaining = quantity - 200;
+    return remaining * quantity + firstHundred + 100 * 50;
   }
-  else{
-    let remaining=quantity-200;
-    return remaining*quantity+firstHundred+(100*50)
-  }
-}
-
+};
 
 //   array-looping-tasks
 //   Task 1
 //   Write a JavaScript code to reverse the array colors without using the reverse method.
-const arrayReverse=(arr)=>{
-  let newArray=[]
+const arrayReverse = (arr) => {
+  let newArray = [];
   for (const el of arr) {
-    newArray.unshift(el)
-
-    
+    newArray.unshift(el);
   }
   return newArray;
-}
-
-
+};
 
 //   Task 2
 //   Write a JavaScript code to get the even numbers from an array using any looping technique.
-const getEvenNumber=(numbers)=>{
-  let evenArray=[]
+const getEvenNumber = (numbers) => {
+  let evenArray = [];
   for (const num of numbers) {
-    if (num%2===0) {
-      evenArray.push(num)
-      
+    if (num % 2 === 0) {
+      evenArray.push(num);
     }
-
-    
   }
-  return evenArray
-}
+  return evenArray;
+};
 
 //   Task 3
 //   Use a for...of loop to concatenate all the elements of an array into a single string.
-const stringConcatation=(arr)=>{
-  let concatedArray="";
+const stringConcatation = (arr) => {
+  let concatedArray = "";
   for (const el of arr) {
-    concatedArray+=el
-    
+    concatedArray += el;
   }
-  return concatedArray
-}
+  return concatedArray;
+};
 
 //   Task 4 (Hard)
 //   Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
-const reversedSentence=(str)=>{
-
-  const splitedString=str.split(" ")
- const reversed=[]
-for (const word of splitedString) {
-  reversed.unshift(word)
-  
-}
-return reversed.join(" ")
-}
+const reversedSentence = (str) => {
+  const splitedString = str.split(" ");
+  const reversed = [];
+  for (const word of splitedString) {
+    reversed.unshift(word);
+  }
+  return reversed.join(" ");
+};
 
 // Find the lowest number in the array below.
 
-const lowestFinder=(arr)=>{
-  let low=ar[0]
+const lowestFinder = (arr) => {
+  let low = ar[0];
   for (const el of arr) {
-    if (el<low) {
-      low=el
-      
+    if (el < low) {
+      low = el;
     }
-    
   }
-  return low
-}
+  return low;
+};
 
 // Task -2:
 // Find the friend with the smallest name.
 // const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
-const smallestStringFinder=(arr)=>{
-  let smallest=arr[0]
+const smallestStringFinder = (arr) => {
+  let smallest = arr[0];
   for (const el of arr) {
-    if (el.length<smallest.length) {
-      smallest=el
-      
+    if (el.length < smallest.length) {
+      smallest = el;
     }
-    
   }
-  return smallest
-}
-
+  return smallest;
+};
 
 // Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
-const totalBudget=(laptopQuantity,tabletQuantity,mobileQuantity)=>{
-  return (laptopQuantity*35000)+(tabletQuantity*15000)+(mobileQuantity*20000)
-}
+const totalBudget = (laptopQuantity, tabletQuantity, mobileQuantity) => {
+  return (
+    laptopQuantity * 35000 + tabletQuantity * 15000 + mobileQuantity * 20000
+  );
+};
 
 // Task-4:
 // You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
@@ -266,3 +242,54 @@ const totalBudget=(laptopQuantity,tabletQuantity,mobileQuantity)=>{
 //         ];
 // Task-4
 // Write a function called count_zero() which will take a binary string (Binary string is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
+
+// matchFinder check second parameter includes in first parameter
+
+const matchFinder = (strOne, strTwo) => {
+  if (
+    !(typeof strOne === ("string" || undefined)) ||
+    !(typeof strTwo === ("string" || undefined))
+  ) {
+    return "You can give only string data and oviously you have to give atleast two value";
+  }
+  if (strOne.includes(strTwo)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// Cube function
+const cube = (num) => {
+  if (!(typeof num === "number")) {
+    return "You can give number type data";
+  }
+  return num ** 3;
+};
+
+// FindAdress
+const findAdress = (ob) => {
+  if (!(typeof ob === "object")) {
+    return "You have to give an object type data";
+  }
+  const street = ob.street || "__";
+  const house = ob.house || "__";
+  const society = ob.society || "__";
+  return `${street},${house},${society}`;
+};
+
+// Chips buyer function
+const canPay = (moneys, price) => {
+  if (!Array.isArray(moneys) || typeof price !== "number") {
+    return "You have to give an object type data";
+  }
+  let sum = 0;
+  for (const money of moneys) {
+    sum += money;
+  }
+  if (sum === price) {
+    return "You will get chips";
+  } else {
+    return "You need to add some money sir";
+  }
+};
