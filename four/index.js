@@ -1,6 +1,6 @@
 function calculateMoney(totalTicketSale) {
   if (totalTicketSale < 0 || totalTicketSale === undefined) {
-    return "Sorry Baker brother your input is Invalid.Give a positive number and try again.";
+    return "Invalid Number";
   } else {
     const eachTicketPrice = 120;
     const staffLuchBill = 50;
@@ -13,10 +13,9 @@ function calculateMoney(totalTicketSale) {
   }
 }
 
-console.log(calculateMoney(10));
 function checkName(name) {
   if (typeof name !== "string") {
-    return "Invalid";
+    return "invalid";
   }
   const nameLoweCase = name.toLowerCase();
   const lastLetterOfName = nameLoweCase[nameLoweCase.length - 1];
@@ -34,7 +33,7 @@ function checkName(name) {
 
 function deleteInvalids(arr) {
   if (!Array.isArray(arr)) {
-    return "Please provide an array type data";
+    return "Invalid Array";
   }
   const filterData = [];
   for (const el of arr) {
@@ -55,7 +54,7 @@ function password(obj) {
     site === undefined ||
     year.toString().length !== 4
   ) {
-    return "Invalid";
+    return "invalid";
   }
   const captalizeSite =
     site.charAt(0).toUpperCase() + site.slice(1).toLowerCase();
@@ -78,6 +77,6 @@ function monthlySavings(arr, livingCost) {
   if (savings >= 0) {
     return savings;
   } else {
-    return `"earn more"`;
+    return "earn more";
   }
 }
