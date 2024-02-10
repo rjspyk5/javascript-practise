@@ -174,7 +174,6 @@ const stringConcatation = (arr) => {
   }
   return concatedArray;
 };
-
 //   Task 4 (Hard)
 //   Reverse the words of a sentence. Only the position of the word will be reversed. check out the output
 const reversedSentence = (str) => {
@@ -185,9 +184,7 @@ const reversedSentence = (str) => {
   }
   return reversed.join(" ");
 };
-
 // Find the lowest number in the array below.
-
 const lowestFinder = (arr) => {
   let low = ar[0];
   for (const el of arr) {
@@ -197,7 +194,6 @@ const lowestFinder = (arr) => {
   }
   return low;
 };
-
 // Task -2:
 // Find the friend with the smallest name.
 // const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
@@ -210,7 +206,6 @@ const smallestStringFinder = (arr) => {
   }
   return smallest;
 };
-
 // Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
 const totalBudget = (laptopQuantity, tabletQuantity, mobileQuantity) => {
   return (
