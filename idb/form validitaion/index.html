@@ -16,23 +16,23 @@
     <div class="container flex items-center justify-center bg-gray-100 mx-auto">
         <div class="reg-form  p-5 rounded-md shadow-lg mt-11 bg-white mb-11">
 
-            <form action="" class=" ">
+            <form action="" class=" " id="registrationForm">
                 <fieldset class="space-y-3">
                     <legend class="text-center font-semibold text-2xl mb-5">Registration Form</legend>
                     <div class="name flex space-x-4">
                         <input type="text" name="firstname" value="" id="firstname"
                             class="p-2 rounded border border-gray-300" placeholder="Enter Your Firstname">
-                        <input type="text" name="firstname" value="" id="lastname"
+                        <input type="text" name="lastname" value="" id="lastname"
                             class="p-2 rounded border border-gray-300" placeholder="Enter Your Lastname">
                     </div>
                     <div class="number">
-                        <input type="text" name="firstname" value="" id="email"
+                        <input type="text" name="email" value="" id="email"
                             class="p-2 w-full rounded border border-gray-300"
                             placeholder="Enter Your Mobile or Email Adress">
 
                     </div>
                     <div class="password">
-                        <input type="password" name="firstname" id="password" value=""
+                        <input type="password" name="password" id="password" value=""
                             class="p-2 w-full rounded border border-gray-300" placeholder="New Password">
                     </div>
                     <div class="dateOfBirthText space-x-1 flex items-center">
@@ -40,7 +40,7 @@
                         <i class="fa-solid fa-circle-question text-slate-600 text-sm"></i>
                     </div>
                     <div class="dateBirth grid grid-cols-3 gap-6">
-                        <div><select name="" id="birthdate" class="border border-gray-300 p-1 w-full rounded">
+                        <div><select name="BirthDate" id="birthdate" class="border border-gray-300 p-1 w-full rounded">
                                 <option value="">1</option>
                                 <option value="">2</option>
                                 <option value="">3</option>
@@ -72,7 +72,7 @@
                                 <option value="">29</option>
                                 <option value="">30</option>
                             </select></div>
-                        <div> <select name="" id="birthmonth"
+                        <div> <select name="BirthMonth" id="birthmonth"
                                 class="border border-gray-300 p-1 w-full rounded overflow-hidden">
                                 <option value="">January</option>
                                 <option value="">February</option>
@@ -87,7 +87,7 @@
                                 <option value="">November</option>
                                 <option value="">December</option>
                             </select></div>
-                        <div> <select name="" id="birthyear" class="border border-gray-300 p-1 w-full rounded">
+                        <div> <select name="BirthYear" id="birthyear" class="border border-gray-300 p-1 w-full rounded">
                                 <option value="">2011</option>
                                 <option value="">2012</option>
                                 <option value="">2013</option>
